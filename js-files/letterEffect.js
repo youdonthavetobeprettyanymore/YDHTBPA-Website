@@ -16,7 +16,7 @@ function createFlashingWord(word) {
     document.getElementById('flashing-words-container').appendChild(flashWord);
 
     setTimeout(() => {
-        flashWord.remove(); // Remove the word after it flashes
+        flashWord.remove(); // Disappear after flashing on screen to prevent dupes
     }, 1000); // Flash duration
 }
 
@@ -31,5 +31,5 @@ function flashRandomWord() {
     setTimeout(flashRandomWord, nextFlashInterval);
 }
 
-// Start the flashing process
+// Initializing the process. No end
 flashRandomWord();
